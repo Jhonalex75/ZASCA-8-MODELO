@@ -1,0 +1,186 @@
+Name,Data Type,Connection,PLC Tag,Address,Acquisition Cycle,Comment
+ST_EncoderPos,Real,PLC_S7_1200,,DB2.DBD0,100ms,Posicion encoder en grados
+ST_VFD_Speed,Real,PLC_S7_1200,,DB2.DBD4,100ms,Velocidad del variador en porcentaje
+ST_MotorRunning,Bool,PLC_S7_1200,,DB2.DBX8.0,100ms,Motor principal encendido
+ST_BrakeReleased,Bool,PLC_S7_1200,,DB2.DBX8.1,500ms,Freno mecanico liberado
+ST_SystemReady,Bool,PLC_S7_1200,,DB2.DBX8.2,500ms,Sistema listo para operacion
+ST_SystemFault,Bool,PLC_S7_1200,,DB2.DBX8.3,100ms,Falla activa en el sistema
+ST_AutoMode,Bool,PLC_S7_1200,,DB2.DBX8.4,500ms,Modo automatico habilitado
+ST_PosReached,Bool,PLC_S7_1200,,DB2.DBX8.5,100ms,Posicion objetivo alcanzada
+TEL_Torque,Real,PLC_S7_1200,,DB2.DBD10,200ms,Torque del motor en Nm
+TEL_Current,Real,PLC_S7_1200,,DB2.DBD14,200ms,Corriente del motor en Amperios
+TEL_Temperature,Real,PLC_S7_1200,,DB2.DBD18,1000ms,Temperatura del motor en grados C
+CMD_TargetTray,Int,PLC_S7_1200,,DB1.DBW0,,Bandeja objetivo seleccionada (0-19)
+CMD_Start,Bool,PLC_S7_1200,,DB1.DBX4.0,,Comando de arranque (pulso)
+CMD_Stop,Bool,PLC_S7_1200,,DB1.DBX4.1,,Comando de parada (pulso)
+CMD_EStop,Bool,PLC_S7_1200,,DB1.DBX4.2,,Paro de emergencia desde HMI
+CMD_Reset,Bool,PLC_S7_1200,,DB1.DBX4.3,,Reset de fallas (pulso)
+CMD_AutoMode,Bool,PLC_S7_1200,,DB1.DBX4.4,,Habilitar modo automatico
+CMD_InventoryDecrement,Bool,PLC_S7_1200,,DB1.DBX4.5,,Descontar inventario (pulso)
+Q_MotorOn,Bool,PLC_S7_1200,,%Q0.0,100ms,Salida digital - Motor principal
+Q_BrakeRelease,Bool,PLC_S7_1200,,%Q0.1,100ms,Salida digital - Freno
+Q_Ind_Run,Bool,PLC_S7_1200,,%Q0.2,500ms,Indicador de marcha
+Q_Ind_Ready,Bool,PLC_S7_1200,,%Q0.3,500ms,Indicador de listo
+Q_Tower_Green,Bool,PLC_S7_1200,,%Q0.6,500ms,Semaforo torre - Verde
+Q_Tower_Yellow,Bool,PLC_S7_1200,,%Q0.7,500ms,Semaforo torre - Amarillo
+Q_Tower_Red,Bool,PLC_S7_1200,,%Q1.0,500ms,Semaforo torre - Rojo
+I0_0_EStop,Bool,PLC_S7_1200,,%I0.0,100ms,Entrada - Seta de emergencia (NC)
+I0_1_Start,Bool,PLC_S7_1200,,%I0.1,100ms,Entrada - Boton Start
+I0_2_Stop,Bool,PLC_S7_1200,,%I0.2,100ms,Entrada - Boton Stop
+I0_4_DoorClosed,Bool,PLC_S7_1200,,%I0.4,500ms,Entrada - Sensor puerta cerrada
+I0_5_SafetyCurtain,Bool,PLC_S7_1200,,%I0.5,500ms,Entrada - Cortina de seguridad
+I0_6_ReflexSensor,Bool,PLC_S7_1200,,%I0.6,100ms,Entrada - Sensor reflex (picking)
+INV_Tray0_Qty,Int,PLC_S7_1200,,DB3.DBW22,2000ms,Inventario Bandeja 0 - Cantidad
+INV_Tray1_Qty,Int,PLC_S7_1200,,DB3.DBW52,2000ms,Inventario Bandeja 1 - Cantidad
+INV_Tray2_Qty,Int,PLC_S7_1200,,DB3.DBW82,2000ms,Inventario Bandeja 2 - Cantidad
+INV_Tray3_Qty,Int,PLC_S7_1200,,DB3.DBW112,2000ms,Inventario Bandeja 3 - Cantidad
+INV_Tray4_Qty,Int,PLC_S7_1200,,DB3.DBW142,2000ms,Inventario Bandeja 4 - Cantidad
+INV_Tray5_Qty,Int,PLC_S7_1200,,DB3.DBW172,2000ms,Inventario Bandeja 5 - Cantidad
+INV_Tray6_Qty,Int,PLC_S7_1200,,DB3.DBW202,2000ms,Inventario Bandeja 6 - Cantidad
+INV_Tray7_Qty,Int,PLC_S7_1200,,DB3.DBW232,2000ms,Inventario Bandeja 7 - Cantidad
+INV_Tray8_Qty,Int,PLC_S7_1200,,DB3.DBW262,2000ms,Inventario Bandeja 8 - Cantidad
+INV_Tray9_Qty,Int,PLC_S7_1200,,DB3.DBW292,2000ms,Inventario Bandeja 9 - Cantidad
+INV_Tray10_Qty,Int,PLC_S7_1200,,DB3.DBW322,2000ms,Inventario Bandeja 10 - Cantidad
+INV_Tray11_Qty,Int,PLC_S7_1200,,DB3.DBW352,2000ms,Inventario Bandeja 11 - Cantidad
+INV_Tray12_Qty,Int,PLC_S7_1200,,DB3.DBW382,2000ms,Inventario Bandeja 12 - Cantidad
+INV_Tray13_Qty,Int,PLC_S7_1200,,DB3.DBW412,2000ms,Inventario Bandeja 13 - Cantidad
+INV_Tray14_Qty,Int,PLC_S7_1200,,DB3.DBW442,2000ms,Inventario Bandeja 14 - Cantidad
+INV_Tray15_Qty,Int,PLC_S7_1200,,DB3.DBW472,2000ms,Inventario Bandeja 15 - Cantidad
+INV_Tray16_Qty,Int,PLC_S7_1200,,DB3.DBW502,2000ms,Inventario Bandeja 16 - Cantidad
+INV_Tray17_Qty,Int,PLC_S7_1200,,DB3.DBW532,2000ms,Inventario Bandeja 17 - Cantidad
+INV_Tray18_Qty,Int,PLC_S7_1200,,DB3.DBW562,2000ms,Inventario Bandeja 18 - Cantidad
+INV_Tray19_Qty,Int,PLC_S7_1200,,DB3.DBW592,2000ms,Inventario Bandeja 19 - Cantidad
+INV_Tray0_Max,Int,PLC_S7_1200,,DB3.DBW24,2000ms,Inventario Bandeja 0 - Maximo
+INV_Tray1_Max,Int,PLC_S7_1200,,DB3.DBW54,2000ms,Inventario Bandeja 1 - Maximo
+INV_Tray2_Max,Int,PLC_S7_1200,,DB3.DBW84,2000ms,Inventario Bandeja 2 - Maximo
+INV_Tray3_Max,Int,PLC_S7_1200,,DB3.DBW114,2000ms,Inventario Bandeja 3 - Maximo
+INV_Tray4_Max,Int,PLC_S7_1200,,DB3.DBW144,2000ms,Inventario Bandeja 4 - Maximo
+INV_Tray5_Max,Int,PLC_S7_1200,,DB3.DBW174,2000ms,Inventario Bandeja 5 - Maximo
+INV_Tray6_Max,Int,PLC_S7_1200,,DB3.DBW204,2000ms,Inventario Bandeja 6 - Maximo
+INV_Tray7_Max,Int,PLC_S7_1200,,DB3.DBW234,2000ms,Inventario Bandeja 7 - Maximo
+INV_Tray8_Max,Int,PLC_S7_1200,,DB3.DBW264,2000ms,Inventario Bandeja 8 - Maximo
+INV_Tray9_Max,Int,PLC_S7_1200,,DB3.DBW294,2000ms,Inventario Bandeja 9 - Maximo
+Q_Found_Tray_ID,Int,PLC_S7_1200,,DB1.DBW30,,Resultado busqueda - ID bandeja encontrada
+Q_Ref_Info,String,PLC_S7_1200,,DB1.DBB32,,Resultado busqueda - Texto informativo
+VFD_P1120_AccTime,Real,PLC_S7_1200,,DB2.DBD22,5000ms,Parametro VFD P1120 - Tiempo aceleracion
+VFD_P1121_DecTime,Real,PLC_S7_1200,,DB2.DBD26,5000ms,Parametro VFD P1121 - Tiempo deceleracion
+INV_T0_RefA,Int,PLC_S7_1200,,DB3.DBW26,2000ms,Inventario Bandeja 0 - Referencia A
+INV_T0_RefB,Int,PLC_S7_1200,,DB3.DBW28,2000ms,Inventario Bandeja 0 - Referencia B
+INV_T0_RefC,Int,PLC_S7_1200,,DB3.DBW30,2000ms,Inventario Bandeja 0 - Referencia C
+INV_T0_RefD,Int,PLC_S7_1200,,DB3.DBW32,2000ms,Inventario Bandeja 0 - Referencia D
+INV_T0_RefE,Int,PLC_S7_1200,,DB3.DBW34,2000ms,Inventario Bandeja 0 - Referencia E
+INV_T0_RefF,Int,PLC_S7_1200,,DB3.DBW36,2000ms,Inventario Bandeja 0 - Referencia F
+INV_T1_RefA,Int,PLC_S7_1200,,DB3.DBW56,2000ms,Inventario Bandeja 1 - Referencia A
+INV_T1_RefB,Int,PLC_S7_1200,,DB3.DBW58,2000ms,Inventario Bandeja 1 - Referencia B
+INV_T1_RefC,Int,PLC_S7_1200,,DB3.DBW60,2000ms,Inventario Bandeja 1 - Referencia C
+INV_T1_RefD,Int,PLC_S7_1200,,DB3.DBW62,2000ms,Inventario Bandeja 1 - Referencia D
+INV_T1_RefE,Int,PLC_S7_1200,,DB3.DBW64,2000ms,Inventario Bandeja 1 - Referencia E
+INV_T1_RefF,Int,PLC_S7_1200,,DB3.DBW66,2000ms,Inventario Bandeja 1 - Referencia F
+INV_T2_RefA,Int,PLC_S7_1200,,DB3.DBW86,2000ms,Inventario Bandeja 2 - Referencia A
+INV_T2_RefB,Int,PLC_S7_1200,,DB3.DBW88,2000ms,Inventario Bandeja 2 - Referencia B
+INV_T2_RefC,Int,PLC_S7_1200,,DB3.DBW90,2000ms,Inventario Bandeja 2 - Referencia C
+INV_T2_RefD,Int,PLC_S7_1200,,DB3.DBW92,2000ms,Inventario Bandeja 2 - Referencia D
+INV_T2_RefE,Int,PLC_S7_1200,,DB3.DBW94,2000ms,Inventario Bandeja 2 - Referencia E
+INV_T2_RefF,Int,PLC_S7_1200,,DB3.DBW96,2000ms,Inventario Bandeja 2 - Referencia F
+INV_T3_RefA,Int,PLC_S7_1200,,DB3.DBW116,2000ms,Inventario Bandeja 3 - Referencia A
+INV_T3_RefB,Int,PLC_S7_1200,,DB3.DBW118,2000ms,Inventario Bandeja 3 - Referencia B
+INV_T3_RefC,Int,PLC_S7_1200,,DB3.DBW120,2000ms,Inventario Bandeja 3 - Referencia C
+INV_T3_RefD,Int,PLC_S7_1200,,DB3.DBW122,2000ms,Inventario Bandeja 3 - Referencia D
+INV_T3_RefE,Int,PLC_S7_1200,,DB3.DBW124,2000ms,Inventario Bandeja 3 - Referencia E
+INV_T3_RefF,Int,PLC_S7_1200,,DB3.DBW126,2000ms,Inventario Bandeja 3 - Referencia F
+INV_T4_RefA,Int,PLC_S7_1200,,DB3.DBW146,2000ms,Inventario Bandeja 4 - Referencia A
+INV_T4_RefB,Int,PLC_S7_1200,,DB3.DBW148,2000ms,Inventario Bandeja 4 - Referencia B
+INV_T4_RefC,Int,PLC_S7_1200,,DB3.DBW150,2000ms,Inventario Bandeja 4 - Referencia C
+INV_T4_RefD,Int,PLC_S7_1200,,DB3.DBW152,2000ms,Inventario Bandeja 4 - Referencia D
+INV_T4_RefE,Int,PLC_S7_1200,,DB3.DBW154,2000ms,Inventario Bandeja 4 - Referencia E
+INV_T4_RefF,Int,PLC_S7_1200,,DB3.DBW156,2000ms,Inventario Bandeja 4 - Referencia F
+INV_T5_RefA,Int,PLC_S7_1200,,DB3.DBW176,2000ms,Inventario Bandeja 5 - Referencia A
+INV_T5_RefB,Int,PLC_S7_1200,,DB3.DBW178,2000ms,Inventario Bandeja 5 - Referencia B
+INV_T5_RefC,Int,PLC_S7_1200,,DB3.DBW180,2000ms,Inventario Bandeja 5 - Referencia C
+INV_T5_RefD,Int,PLC_S7_1200,,DB3.DBW182,2000ms,Inventario Bandeja 5 - Referencia D
+INV_T5_RefE,Int,PLC_S7_1200,,DB3.DBW184,2000ms,Inventario Bandeja 5 - Referencia E
+INV_T5_RefF,Int,PLC_S7_1200,,DB3.DBW186,2000ms,Inventario Bandeja 5 - Referencia F
+INV_T6_RefA,Int,PLC_S7_1200,,DB3.DBW206,2000ms,Inventario Bandeja 6 - Referencia A
+INV_T6_RefB,Int,PLC_S7_1200,,DB3.DBW208,2000ms,Inventario Bandeja 6 - Referencia B
+INV_T6_RefC,Int,PLC_S7_1200,,DB3.DBW210,2000ms,Inventario Bandeja 6 - Referencia C
+INV_T6_RefD,Int,PLC_S7_1200,,DB3.DBW212,2000ms,Inventario Bandeja 6 - Referencia D
+INV_T6_RefE,Int,PLC_S7_1200,,DB3.DBW214,2000ms,Inventario Bandeja 6 - Referencia E
+INV_T6_RefF,Int,PLC_S7_1200,,DB3.DBW216,2000ms,Inventario Bandeja 6 - Referencia F
+INV_T7_RefA,Int,PLC_S7_1200,,DB3.DBW236,2000ms,Inventario Bandeja 7 - Referencia A
+INV_T7_RefB,Int,PLC_S7_1200,,DB3.DBW238,2000ms,Inventario Bandeja 7 - Referencia B
+INV_T7_RefC,Int,PLC_S7_1200,,DB3.DBW240,2000ms,Inventario Bandeja 7 - Referencia C
+INV_T7_RefD,Int,PLC_S7_1200,,DB3.DBW242,2000ms,Inventario Bandeja 7 - Referencia D
+INV_T7_RefE,Int,PLC_S7_1200,,DB3.DBW244,2000ms,Inventario Bandeja 7 - Referencia E
+INV_T7_RefF,Int,PLC_S7_1200,,DB3.DBW246,2000ms,Inventario Bandeja 7 - Referencia F
+INV_T8_RefA,Int,PLC_S7_1200,,DB3.DBW266,2000ms,Inventario Bandeja 8 - Referencia A
+INV_T8_RefB,Int,PLC_S7_1200,,DB3.DBW268,2000ms,Inventario Bandeja 8 - Referencia B
+INV_T8_RefC,Int,PLC_S7_1200,,DB3.DBW270,2000ms,Inventario Bandeja 8 - Referencia C
+INV_T8_RefD,Int,PLC_S7_1200,,DB3.DBW272,2000ms,Inventario Bandeja 8 - Referencia D
+INV_T8_RefE,Int,PLC_S7_1200,,DB3.DBW274,2000ms,Inventario Bandeja 8 - Referencia E
+INV_T8_RefF,Int,PLC_S7_1200,,DB3.DBW276,2000ms,Inventario Bandeja 8 - Referencia F
+INV_T9_RefA,Int,PLC_S7_1200,,DB3.DBW296,2000ms,Inventario Bandeja 9 - Referencia A
+INV_T9_RefB,Int,PLC_S7_1200,,DB3.DBW298,2000ms,Inventario Bandeja 9 - Referencia B
+INV_T9_RefC,Int,PLC_S7_1200,,DB3.DBW300,2000ms,Inventario Bandeja 9 - Referencia C
+INV_T9_RefD,Int,PLC_S7_1200,,DB3.DBW302,2000ms,Inventario Bandeja 9 - Referencia D
+INV_T9_RefE,Int,PLC_S7_1200,,DB3.DBW304,2000ms,Inventario Bandeja 9 - Referencia E
+INV_T9_RefF,Int,PLC_S7_1200,,DB3.DBW306,2000ms,Inventario Bandeja 9 - Referencia F
+INV_T10_RefA,Int,PLC_S7_1200,,DB3.DBW326,2000ms,Inventario Bandeja 10 - Referencia A
+INV_T10_RefB,Int,PLC_S7_1200,,DB3.DBW328,2000ms,Inventario Bandeja 10 - Referencia B
+INV_T10_RefC,Int,PLC_S7_1200,,DB3.DBW330,2000ms,Inventario Bandeja 10 - Referencia C
+INV_T10_RefD,Int,PLC_S7_1200,,DB3.DBW332,2000ms,Inventario Bandeja 10 - Referencia D
+INV_T10_RefE,Int,PLC_S7_1200,,DB3.DBW334,2000ms,Inventario Bandeja 10 - Referencia E
+INV_T10_RefF,Int,PLC_S7_1200,,DB3.DBW336,2000ms,Inventario Bandeja 10 - Referencia F
+INV_T11_RefA,Int,PLC_S7_1200,,DB3.DBW356,2000ms,Inventario Bandeja 11 - Referencia A
+INV_T11_RefB,Int,PLC_S7_1200,,DB3.DBW358,2000ms,Inventario Bandeja 11 - Referencia B
+INV_T11_RefC,Int,PLC_S7_1200,,DB3.DBW360,2000ms,Inventario Bandeja 11 - Referencia C
+INV_T11_RefD,Int,PLC_S7_1200,,DB3.DBW362,2000ms,Inventario Bandeja 11 - Referencia D
+INV_T11_RefE,Int,PLC_S7_1200,,DB3.DBW364,2000ms,Inventario Bandeja 11 - Referencia E
+INV_T11_RefF,Int,PLC_S7_1200,,DB3.DBW366,2000ms,Inventario Bandeja 11 - Referencia F
+INV_T12_RefA,Int,PLC_S7_1200,,DB3.DBW386,2000ms,Inventario Bandeja 12 - Referencia A
+INV_T12_RefB,Int,PLC_S7_1200,,DB3.DBW388,2000ms,Inventario Bandeja 12 - Referencia B
+INV_T12_RefC,Int,PLC_S7_1200,,DB3.DBW390,2000ms,Inventario Bandeja 12 - Referencia C
+INV_T12_RefD,Int,PLC_S7_1200,,DB3.DBW392,2000ms,Inventario Bandeja 12 - Referencia D
+INV_T12_RefE,Int,PLC_S7_1200,,DB3.DBW394,2000ms,Inventario Bandeja 12 - Referencia E
+INV_T12_RefF,Int,PLC_S7_1200,,DB3.DBW396,2000ms,Inventario Bandeja 12 - Referencia F
+INV_T13_RefA,Int,PLC_S7_1200,,DB3.DBW416,2000ms,Inventario Bandeja 13 - Referencia A
+INV_T13_RefB,Int,PLC_S7_1200,,DB3.DBW418,2000ms,Inventario Bandeja 13 - Referencia B
+INV_T13_RefC,Int,PLC_S7_1200,,DB3.DBW420,2000ms,Inventario Bandeja 13 - Referencia C
+INV_T13_RefD,Int,PLC_S7_1200,,DB3.DBW422,2000ms,Inventario Bandeja 13 - Referencia D
+INV_T13_RefE,Int,PLC_S7_1200,,DB3.DBW424,2000ms,Inventario Bandeja 13 - Referencia E
+INV_T13_RefF,Int,PLC_S7_1200,,DB3.DBW426,2000ms,Inventario Bandeja 13 - Referencia F
+INV_T14_RefA,Int,PLC_S7_1200,,DB3.DBW446,2000ms,Inventario Bandeja 14 - Referencia A
+INV_T14_RefB,Int,PLC_S7_1200,,DB3.DBW448,2000ms,Inventario Bandeja 14 - Referencia B
+INV_T14_RefC,Int,PLC_S7_1200,,DB3.DBW450,2000ms,Inventario Bandeja 14 - Referencia C
+INV_T14_RefD,Int,PLC_S7_1200,,DB3.DBW452,2000ms,Inventario Bandeja 14 - Referencia D
+INV_T14_RefE,Int,PLC_S7_1200,,DB3.DBW454,2000ms,Inventario Bandeja 14 - Referencia E
+INV_T14_RefF,Int,PLC_S7_1200,,DB3.DBW456,2000ms,Inventario Bandeja 14 - Referencia F
+INV_T15_RefA,Int,PLC_S7_1200,,DB3.DBW476,2000ms,Inventario Bandeja 15 - Referencia A
+INV_T15_RefB,Int,PLC_S7_1200,,DB3.DBW478,2000ms,Inventario Bandeja 15 - Referencia B
+INV_T15_RefC,Int,PLC_S7_1200,,DB3.DBW480,2000ms,Inventario Bandeja 15 - Referencia C
+INV_T15_RefD,Int,PLC_S7_1200,,DB3.DBW482,2000ms,Inventario Bandeja 15 - Referencia D
+INV_T15_RefE,Int,PLC_S7_1200,,DB3.DBW484,2000ms,Inventario Bandeja 15 - Referencia E
+INV_T15_RefF,Int,PLC_S7_1200,,DB3.DBW486,2000ms,Inventario Bandeja 15 - Referencia F
+INV_T16_RefA,Int,PLC_S7_1200,,DB3.DBW506,2000ms,Inventario Bandeja 16 - Referencia A
+INV_T16_RefB,Int,PLC_S7_1200,,DB3.DBW508,2000ms,Inventario Bandeja 16 - Referencia B
+INV_T16_RefC,Int,PLC_S7_1200,,DB3.DBW510,2000ms,Inventario Bandeja 16 - Referencia C
+INV_T16_RefD,Int,PLC_S7_1200,,DB3.DBW512,2000ms,Inventario Bandeja 16 - Referencia D
+INV_T16_RefE,Int,PLC_S7_1200,,DB3.DBW514,2000ms,Inventario Bandeja 16 - Referencia E
+INV_T16_RefF,Int,PLC_S7_1200,,DB3.DBW516,2000ms,Inventario Bandeja 16 - Referencia F
+INV_T17_RefA,Int,PLC_S7_1200,,DB3.DBW536,2000ms,Inventario Bandeja 17 - Referencia A
+INV_T17_RefB,Int,PLC_S7_1200,,DB3.DBW538,2000ms,Inventario Bandeja 17 - Referencia B
+INV_T17_RefC,Int,PLC_S7_1200,,DB3.DBW540,2000ms,Inventario Bandeja 17 - Referencia C
+INV_T17_RefD,Int,PLC_S7_1200,,DB3.DBW542,2000ms,Inventario Bandeja 17 - Referencia D
+INV_T17_RefE,Int,PLC_S7_1200,,DB3.DBW544,2000ms,Inventario Bandeja 17 - Referencia E
+INV_T17_RefF,Int,PLC_S7_1200,,DB3.DBW546,2000ms,Inventario Bandeja 17 - Referencia F
+INV_T18_RefA,Int,PLC_S7_1200,,DB3.DBW566,2000ms,Inventario Bandeja 18 - Referencia A
+INV_T18_RefB,Int,PLC_S7_1200,,DB3.DBW568,2000ms,Inventario Bandeja 18 - Referencia B
+INV_T18_RefC,Int,PLC_S7_1200,,DB3.DBW570,2000ms,Inventario Bandeja 18 - Referencia C
+INV_T18_RefD,Int,PLC_S7_1200,,DB3.DBW572,2000ms,Inventario Bandeja 18 - Referencia D
+INV_T18_RefE,Int,PLC_S7_1200,,DB3.DBW574,2000ms,Inventario Bandeja 18 - Referencia E
+INV_T18_RefF,Int,PLC_S7_1200,,DB3.DBW576,2000ms,Inventario Bandeja 18 - Referencia F
+INV_T19_RefA,Int,PLC_S7_1200,,DB3.DBW596,2000ms,Inventario Bandeja 19 - Referencia A
+INV_T19_RefB,Int,PLC_S7_1200,,DB3.DBW598,2000ms,Inventario Bandeja 19 - Referencia B
+INV_T19_RefC,Int,PLC_S7_1200,,DB3.DBW600,2000ms,Inventario Bandeja 19 - Referencia C
+INV_T19_RefD,Int,PLC_S7_1200,,DB3.DBW602,2000ms,Inventario Bandeja 19 - Referencia D
+INV_T19_RefE,Int,PLC_S7_1200,,DB3.DBW604,2000ms,Inventario Bandeja 19 - Referencia E
+INV_T19_RefF,Int,PLC_S7_1200,,DB3.DBW606,2000ms,Inventario Bandeja 19 - Referencia F

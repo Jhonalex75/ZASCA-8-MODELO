@@ -1,0 +1,28 @@
+{
+    "name": "ZASCA Carrusel — Control de Operación",
+    "short_name": "ZASCA",
+    "description": "Sistema de control y monitoreo del carrusel paternoster ZASCA para FASECOL. Gestión de bandejas, picking de arneses e inventario en tiempo real.",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "landscape",
+    "background_color": "#0a1628",
+    "theme_color": "#00ff88",
+    "categories": [
+        "business",
+        "productivity"
+    ],
+    "icons": [
+        {
+            "src": "/icons/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
+            "src": "/vite.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "maskable"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#0a1628"/>
+  
+  <!-- Carousel frame -->
+  <rect x="146" y="80" width="220" height="352" rx="12" fill="none" stroke="#334155" stroke-width="4"/>
+  
+  <!-- Chain lines -->
+  <line x1="156" y1="80" x2="156" y2="432" stroke="#475569" stroke-width="3" stroke-dasharray="8 4"/>
+  <line x1="356" y1="80" x2="356" y2="432" stroke="#475569" stroke-width="3" stroke-dasharray="8 4"/>
+  
+  <!-- Tray 1 (top) -->
+  <rect x="170" y="120" width="172" height="40" rx="6" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <circle cx="210" cy="140" r="8" fill="#ef4444" opacity="0.6"/>
+  <circle cx="236" cy="140" r="8" fill="#22c55e" opacity="0.6"/>
+  <circle cx="262" cy="140" r="8" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="288" cy="140" r="8" fill="#eab308" opacity="0.6"/>
+  <circle cx="314" cy="140" r="8" fill="#06b6d4" opacity="0.6"/>
+  
+  <!-- Tray 2 (center — pick zone) -->
+  <rect x="170" y="216" width="172" height="48" rx="6" fill="#0a2818" stroke="#00ff88" stroke-width="3"/>
+  <circle cx="210" cy="240" r="10" fill="#ef4444"/>
+  <circle cx="240" cy="240" r="10" fill="#22c55e"/>
+  <circle cx="270" cy="240" r="10" fill="#3b82f6"/>
+  <circle cx="300" cy="240" r="10" fill="#eab308"/>
+  <circle cx="330" cy="240" r="10" fill="#06b6d4"/>
+  
+  <!-- Pick zone glow -->
+  <rect x="170" y="216" width="172" height="48" rx="6" fill="none" stroke="#00ff88" stroke-width="2" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Pick zone arrows -->
+  <polygon points="140,240 155,228 155,252" fill="#00ff88"/>
+  <polygon points="372,240 357,228 357,252" fill="#00ff88"/>
+  
+  <!-- Tray 3 (bottom) -->
+  <rect x="170" y="320" width="172" height="40" rx="6" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <circle cx="210" cy="340" r="8" fill="#ef4444" opacity="0.6"/>
+  <circle cx="236" cy="340" r="8" fill="#22c55e" opacity="0.6"/>
+  <circle cx="262" cy="340" r="8" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="288" cy="340" r="8" fill="#eab308" opacity="0.6"/>
+  <circle cx="314" cy="340" r="8" fill="#06b6d4" opacity="0.6"/>
+  
+  <!-- "Z" letter -->
+  <text x="420" y="470" font-family="Arial Black, sans-serif" font-size="80" font-weight="900" fill="#00ff88" opacity="0.9">Z</text>
+  
+  <!-- Sprockets -->
+  <circle cx="256" cy="70" r="20" fill="none" stroke="#475569" stroke-width="3"/>
+  <circle cx="256" cy="442" r="20" fill="none" stroke="#475569" stroke-width="3"/>
+  <circle cx="256" cy="70" r="4" fill="#64748b"/>
+  <circle cx="256" cy="442" r="4" fill="#64748b"/>
+</svg>
