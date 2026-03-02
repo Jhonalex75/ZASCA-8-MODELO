@@ -44,6 +44,7 @@ ZASCA-8-MODELO/
 ├── 📂 plc-bridge/             ← Middleware Node.js → PLC S7-1200
 ├── 📂 wincc-scripts/          ← Scripts JS para TIA Portal / WinCC
 ├── 📂 docs/                   ← Análisis Estructural, manuales, informes
+├── 📂 modelo-mecanico/        ← Modelo 3D Inventor (planos PDF + SAT)
 ├── 📂 Informes/               ← Informes técnicos FASECOL (INF-ZAS-FAS-*)
 │
 ├── GUIA_INTEGRACION_AUTOMATIZADOR.md      ← Guía completa de integración PLC↔HMI
@@ -159,6 +160,34 @@ python Analisis_Estructural_ZASCA.py
 ```
 
 📖 Ver [docs/README.md](docs/README.md) para detalles del motor FEA y APIs.
+
+---
+
+### 5. `modelo-mecanico/` — Modelo 3D Mecánico (Autodesk Inventor)
+
+**Diseño mecánico 3D completo** del carrusel paternoster ZASCA, modelado íntegramente en Autodesk Inventor Professional.
+
+| Contenido | Descripción |
+|---|---|
+| Ensamble principal | `Conjunto_Carrusell_v1` — Modelo paramétrico completo |
+| Plano P-001 | Plano general del conjunto (PDF) |
+| Plano P-002 | Plano de detalle — cortes, secciones, tolerancias (PDF) |
+| Archivo SAT | Formato de intercambio universal ACIS (~810 MB, externo) |
+
+**Componentes principales del modelo:**
+
+| Sub-ensamble | Función |
+|---|---|
+| Sistema Estructural | Frame principal, patas laterales, refuerzos transversales |
+| Cadena y Sprockets | Transmisión DIN ISO 20A-1, paso 1.25", relación 3:1 |
+| Ejes de transmisión | Eje principal Ø50.8mm SAE 1045, eje superior, eje acople |
+| Bandejas y seguidores | 20 bandejas con seguidores, deslizadores y bocines |
+| Guiado y sujeción | Rieles guía rectos/curvos, anillos, platinas, placas de anclaje |
+| Motor-reductor | NORD SK 672.1, 7.5 kW, reductor corona 40:1 |
+
+**Interoperabilidad:** El archivo SAT permite importar el modelo completo en SolidWorks, Fusion 360, FreeCAD, CATIA, NX, Creo y OnShape.
+
+📖 Ver [modelo-mecanico/README.md](modelo-mecanico/README.md) para jerarquía de ensambles, materiales y guía de importación.
 
 ---
 

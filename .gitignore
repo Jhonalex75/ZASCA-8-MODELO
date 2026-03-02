@@ -46,3 +46,14 @@ venv/
 # Archivos temporales
 *.tmp
 *.swp
+
+# Autodesk Inventor (archivos nativos binarios grandes)
+*.ipt
+*.iam
+*.ipj
+*.idw
+*.stp
+*.step
+
+# Archivos CAD de intercambio grandes
+*.sat

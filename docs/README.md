@@ -225,3 +225,5 @@ El dashboard incluye tabla automática comparando ambas opciones de motor. La ve
 ---
 
 > Para integración completa con el PLC y HMI, ver [GUIA_INTEGRACION_AUTOMATIZADOR.md](../GUIA_INTEGRACION_AUTOMATIZADOR.md)
+
+> Para el modelo 3D mecánico completo (Autodesk Inventor), planos de fabricación y archivo SAT de intercambio, ver [modelo-mecanico/README.md](../modelo-mecanico/README.md)
